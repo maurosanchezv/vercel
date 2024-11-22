@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 from decouple import config
 from pathlib import Path
-
+from  os import path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','vercel.app']
+ALLOWED_HOSTS = ['tarea-vercel-iy85c9lii-vivians-projects-e6bf2216.vercel.app','127.0.0.1','vercel.app']
 
 
 # Application definition
@@ -78,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
-        'USER': 'postgres.ixmibsoizgdsujnlfiwy',
+        'USER': 'postgres.saabbiflqxciuwxypfyj',
         'PASSWORD': config('SUPABASE_PASSWORD'),
         'HOST': config('SUPABASE_HOST'),
         'PORT': '6543',
