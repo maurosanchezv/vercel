@@ -25,7 +25,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tarea-vercel-iy85c9lii-vivians-projects-e6bf2216.vercel.app','127.0.0.1','vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1','vercel.app']
 
 
 # Application definition
@@ -78,9 +78,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
-        'USER': 'postgres.saabbiflqxciuwxypfyj',
-        'PASSWORD': config('SUPABASE_PASSWORD'),
-        'HOST': config('SUPABASE_HOST'),
+        'USER': 'postgres.fptvykfecjezciietcel',
+        'PASSWORD': config('pass'),
+        'HOST': config('host'),
         'PORT': '6543',
     }
 }
