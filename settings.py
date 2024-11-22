@@ -25,8 +25,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tarea-vercel-iota.vercel.app''tarea-vercel-iy85c9lii-vivians-projects-e6bf2216.vercel.app','*','vercel.app']
-
+#ALLOWED_HOSTS = ['tarea-vercel-iota.vercel.app''tarea-vercel-iy85c9lii-vivians-projects-e6bf2216.vercel.app','*','vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'tarea-vercel-iota.vercel.app']
 
 # Application definition
 
